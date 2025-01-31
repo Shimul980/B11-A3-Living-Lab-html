@@ -38,8 +38,8 @@
     <nav
       class="sora sticky top-0 flex justify-between items-center lg:px-24 md:px-10 sm:px-4 px-8 bg-orange-200 bg-opacity-40 h-20 border-zinc-400 border-b-2 sm:border-0 backdrop-blur-md backdrop-filter z-50"
     >
-      <div class="flex items-center">
-        <img src="./c1-assets/logo-header.png" alt="" />
+      <div class="flex items-center ">
+        <img class="animate-ping" src="./c1-assets/logo-header.png" alt="" />
         <h3 class="sm:flex hidden sm:block">
           Browse<span class="text-orange-200">4</span>Pets
         </h3>
@@ -108,7 +108,7 @@
           <h2 class="adlam md:text-6xl text-4xl mb-5">
             Pamper Your Pet, <br class="hidden md:block" />Because They Deserve
             <br class="hidden md:block" />
-            the Best
+            the <span class="animate-ping bg-red-400 rounded-lg">Best</span>
           </h2>
 
 
@@ -117,16 +117,15 @@
             <br class="hidden md:block" />
             your furry friends. Shop now and make tails wag with joy!
           </p>
-<div class=" animate-ping w-16 h-16 ml-10 rounded-full">
-          <div class=" bg-red-600 animate-bounce w-16 h-16  rounded-full"></div>
-    </div>
+       
           <a
             class="bg-orange-300 px-4 py-2 rounded-md text-xl font-bold ml-4 hover:text-orange-300 hover:bg-black hover:py-3 transition-all duration-700 "
             href="#"
             >Find a pet</a
           >
-          
+         
     <div class=" animate-ping w-16 h-16 ml-0 rounded-full">
+       <div class=" bg-red-600 animate-bounce w-16 h-16  rounded-full mb-"></div>
             <div class=" bg-red-600 animate-bounce w-16 h-16 ml-10 rounded-full"></div>
             
             <div class=" animate-ping w-16 h-16 ml-10 rounded-full">
@@ -458,28 +457,65 @@
           />
         </div>
       </div>
+
+
+
+
+
+     <div class="pt-96">
+      <div class="bg-orange-100 p-4 rounded-lg shadow-md">
+        <h2 class="text-2xl font-bold mb-2">Dog Food</h2>
+        <ul class="list-none mb-4">
+          <li class="flex items-center mb-2">
+            <img src="dog-food-image.jpg" alt="Dog Food" class="w-12 h-12 mr-2">
+            <span class="text-lg font-medium">Kibble Delight</span>
+          </li>
+          <li class="flex items-center mb-2">
+            <img src="dog-food-image2.jpg" alt="Dog Food" class="w-12 h-12 mr-2">
+            <span class="text-lg font-medium">Pupper's Favorite</span>
+          </li>
+        </ul>
+        <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">Shop Now</button>
+      </div>
+
+      <div class="bg-pink-100 p-4 rounded-lg shadow-md mt-11">
+        <h2 class="text-2xl font-bold mb-2">Cat Corner</h2>
+        <ul class="list-none mb-4">
+          <li class="flex items-center mb-2">
+            <img src="cat-image.jpg" alt="Cat" class="w-12 h-12 mr-2">
+            <span class="text-lg font-medium">Whisker Wonders</span>
+          </li>
+          <li class="flex items-center mb-2">
+            <img src="cat-image2.jpg" alt="Cat" class="w-12 h-12 mr-2">
+            <span class="text-lg font-medium">Purrfectly Pawsome</span>
+          </li>
+        </ul>
+        <button class="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded">Bye Now</button>
+      </div>
+    </div> 
+
     </main>
 
     <div
       class="md:flex bg-red-100 md:h-[491px] my-0 m-24 rounded-md relative -bottom-48 h-auto text-center items-center justify-center mx-auto w-4/5 pb-40 z-10 md:mt-36 lg:-mt-16"
     >
-      <div class="ml-36 md:ml-0">
+      <div class="ml-36 md:ml-14">
         <img class=" " src="./c1-assets/cute-pet-small.png" alt="" />
       </div>
 
-      <div class="sora md:ml-28">
-        <h2 class="adlam md:text-4xl sm:text-3xl text-2xl">
+      <div class="sora md:ml-28 ">
+        <h2 class="adlam md:text-4xl sm:text-3xl text-2xl md:-ml-10">
           Get Pawsome News!
         </h2>
-        <p class="font-semibold sm:text-">
+        <p class="font-semibold sm:text-lg md:-ml-10">
           Exclusive training tips, ticks, product deals and more.
         </p>
 
-        <form class="flex-none text-start mt-11">
+        <form class="flex-none text-start mt-10">
           <input
             type="email"
             placeholder="Your email..."
-            class="md:w-full w-5/6 py-2 ml-7 md:ml-0 border rounded-md"
+            class="md:w-full w-5/6 py-2 ml-7 md:-ml-10 border rounded-md"
           />
 
           <button
@@ -543,7 +579,7 @@
         </div>
       </div>
 <hr>
-      <div class="mt-5 text-center">
+      <div class="mt-5 text-center bg-gradient-to-r to-blue-600 from-red-400">
         <p>© 2025  All rights reserved.</p>
       </div>
     </footer>
