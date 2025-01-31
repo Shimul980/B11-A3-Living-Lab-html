@@ -36,7 +36,7 @@
   <body>
     <header>
       <nav
-        class="sora flex justify-between items-center lg:px-24 md:px-10 sm:px-4 px-8 bg-orange-200 bg-opacity-40 h-20  border-zinc-400 border-b-2 sm:border-0 backdrop-blur-md">
+        class="sora sticky top-0 flex justify-between items-center lg:px-24 md:px-10 sm:px-4 px-8 bg-orange-200  bg-opacity-40 h-20  border-zinc-400 border-b-2 sm:border-0 backdrop-blur-md backdrop-filter">
 
         <div class="flex items-center">
           <img src="./c1-assets/logo-header.png" alt="" />
@@ -45,23 +45,23 @@
           </h3>
         </div>
         <ul class="gap-3 md:gap-6 lg:gap-16 sm:flex hidden sm:block lg:-mr-28 ">
-          <li><a href="#">Find a pet</a></li>
-          <li><a href="#">Breeds</a></li>
-          <li><a href="#">Contact us</a></li>
+          <li><a class="hover:underline hover:text-xl transition-all duration-700" href="#">Find a pet</a></li>
+          <li><a class="hover:underline hover:text-xl transition-all duration-700" href="#">Breeds</a></li>
+          <li><a class="hover:underline hover:text-xl transition-all duration-700" href="#">Contact us</a></li>
         </ul>
         <div
           class="sm:flex hidden sm:block gap-3 sm:gap-1  items-center"
         >
-          <img class="h-6" src="./c1-assets/bell.png" alt="" />
-          <img
-            class="h-6"
+          <a href="#"><img class="h-6 hover:h-8 transition-all duration-700" src="./c1-assets/bell.png" alt="" /></a>
+         <a href="#"> <img
+            class="h-6 hover:h-8 transition-all duration-700"
             src="./c1-assets/search-interface-symbol.png"
             alt=""
-          />
-          <button class="px-5 py-1 border border-orange-600 rounded-md">
+          /></a>
+          <button class="px-5 py-1 border border-orange-600 transition-all duration-700 rounded-md hover:bg-orange-200 hover:text-xl hover:border-none hover:shadow-orange-300 hover:shadow-lg">
             Login
           </button>
-          <button class="bg-orange-300 rounded-md py-1.5 px-6">Register</button>
+          <button class="bg-orange-300 rounded-md py-1.5 px-6 hover:shadow-xl hover:bg-white hover:font-bold hover:py-2 hover:px-7 transition-all duration-700">Register</button>
         </div>
         <a class="sm:hidden " href="#"
           ><img src="./c1-assets/menu-burger.png" alt=""
@@ -89,7 +89,7 @@
             your furry friends. Shop now and make tails wag with joy!
           </p>
 
-          <a class="bg-orange-300 px-4 py-2 rounded-md text-xl font-bold ml-4 " href="#">Find a pet</a>
+          <a class="bg-orange-300 px-4 py-2 rounded-md text-xl font-bold ml-4 hover:text-orange-300 hover:bg-black hover:py-3 transition-all duration-700 "href="#">Find a pet</a>
         </div>
       </div>
 
@@ -108,13 +108,14 @@
           class="bg-orange-200 w-44 h-56 rounded-md content-center items-center"
         >
           <img
-            class="m-auto bg-white rounded-full bg-white rounded-full p-4"
+            class="m-auto bg-white rounded-full p-4"
             src="./c1-assets/dog-cartoon.png"
             alt="dog"
           />
           <h2 class="mt-6 mb-2 font-bold">Dog</h2>
           <h5 class="font-medium">3 Items</h5>
         </div>
+        
         <div class="bg-orange-200 w-44 h-56 rounded-md content-center">
           <img
             class="m-auto bg-white rounded-full p-4"
@@ -169,7 +170,7 @@
 
       
 <div
-        class="lg:bg-orange-100 bg-none md:mt-32 mt-2 lg:h-[650px] md:h-[805px] sm:h-[775px] h-[1050px] w-[100%] md:mb-10 mb-96"
+        class="lg:bg-orange-100 bg-none md:mt-32 mt-2 lg:h-[650px] md:h-[805px] sm:h-[775px] h-[1050px] w-[100%] md:mb-10 "
       >
         <h1 class="adlam font-semibold pt-24 md:pl-24 sm:pl-16 pl-10 pb-12 text-4xl">
           Trending Pet Products
@@ -178,20 +179,19 @@
         <div class="flex gap-8 md:gap-2 lg:flex-nowrap flex-wrap items-center sm:items-start lg:justify-start justify-center md:mx-10 mx-5 ">
 
     <div class="w-[424px] h-{402px} md:ml-10 bg-orange-300  pl-8 flex justify-between rounded-lg ">
-
-            <div class=" absolute -mt-8 text-start">
+            <div class=" sm:absolute -mt-8 text-start">
               <h3 class="pt-14 text-3xl font-bold">T- Shirt for dogs</h3>
               <p class="pt-5 pb-6 ">
-                Discover a world of treats, toys, and <br />
+                Discover a world of treats, toys, and <br/>
                 essentials handpicked for
               </p>
-              <button class="bg-white rounded-md w-28 py-1 font-semibold h-9">
+              <button class="bg-white hover:bg-black transition-all duration-700 hover:text-white hover:h-[120px] rounded-md w-28 py-1 font-semibold h-9 sm:mb-0 mb-20">
                 Shop Now
               </button>
             </div>
-            <div class="text-end sm:ml-44 ml-36 mt-8">
+            <div class="text-end sm:ml-44 mt-8 content-end">
               <img
-                class="mb-8 h-72 w-56"
+                class="mb-8 h-auto w-auto "
                 src="./c1-assets/cute-pet-small.png"
                 alt=""
               />
@@ -218,7 +218,7 @@
             <div class="bg-white rounded-md flex lg:h-28 h-20 lg:w-60 md:w-54 sm:w-44 w-36 lg:py-0 py-4 pl-4 md:gap-5 gap-2 border-2 border-gray-100 ">
 
             <div class="lg:h-20 h-7 lg:w-20 lg:w-16 flex justify-center items-center bg-orange-50 rounded-md lg:my-4 my-2 lg:ml-4 ml-2">
-              <img class="h-8" src="./c1-assets/dog-cartoon.png" alt="" />
+              <img class="h-8" src="./c1-assets/fish-cartoon.png" alt="" />
             </div>
               <div class="font-semibold text-start lg:text-lg text-sm md:w-20 md:h-20  sm:-mt-1 -mt-3 lg:pt-2">
                 <h3>⭐ 4.5</h3>
@@ -230,7 +230,7 @@
             <div class="bg-white rounded-md flex lg:h-28 h-20 lg:w-60 md:w-54 sm:w-44 w-36 lg:py-0 py-4 pl-4 md:gap-5 gap-2 border-2 border-gray-100 ">
 
             <div class="lg:h-20 h-7 lg:w-20 lg:w-16 flex justify-center items-center bg-orange-50 rounded-md lg:my-4 my-2 lg:ml-4 ml-2">
-              <img class="h-8" src="./c1-assets/dog-cartoon.png" alt="" />
+              <img class="h-8" src="./c1-assets/bird-cartoon.png" alt="" />
             </div>
               <div class="font-semibold text-start lg:text-lg text-sm md:w-20 md:h-20  sm:-mt-1 -mt-3 lg:pt-2">
                 <h3>⭐ 4.5</h3>
@@ -242,7 +242,7 @@
             <div class="bg-white rounded-md flex lg:h-28 h-20 lg:w-60 md:w-54 sm:w-44 w-36 lg:py-0 py-4 pl-4 md:gap-5 gap-2 border-2 border-gray-100 ">
 
             <div class="lg:h-20 h-7 lg:w-20 lg:w-16 flex justify-center items-center bg-orange-50 rounded-md lg:my-4 my-2 lg:ml-4 ml-2">
-              <img class="h-8" src="./c1-assets/dog-cartoon.png" alt="" />
+              <img class="h-8" src="./c1-assets/rabbit-cartoon.png" alt="" />
             </div>
               <div class="font-semibold text-start lg:text-lg text-sm md:w-20 md:h-20  sm:-mt-1 -mt-3 lg:pt-2">
                 <h3>⭐ 4.5</h3>
@@ -254,7 +254,7 @@
             <div class="bg-white rounded-md flex lg:h-28 h-20 lg:w-60 md:w-54 sm:w-44 w-36 lg:py-0 py-4 pl-4 md:gap-5 gap-2 border-2 border-gray-100 ">
 
             <div class="lg:h-20 h-7 lg:w-20 lg:w-16 flex justify-center items-center bg-orange-50 rounded-md lg:my-4 my-2 lg:ml-4 ml-2">
-              <img class="h-8" src="./c1-assets/dog-cartoon.png" alt="" />
+              <img class="h-8" src="./c1-assets/bird-cartoon.png" alt="" />
             </div>
               <div class="font-semibold text-start lg:text-lg text-sm md:w-20 md:h-20  sm:-mt-1 -mt-3 lg:pt-2">
                 <h3>⭐ 4.5</h3>
@@ -266,7 +266,7 @@
             <div class="bg-white rounded-md flex lg:h-28 h-20 lg:w-60 md:w-54 sm:w-44 w-36 lg:py-0 py-4 pl-4 md:gap-5 gap-2 border-2 border-gray-100 ">
 
             <div class="lg:h-20 h-7 lg:w-20 lg:w-16 flex justify-center items-center bg-orange-50 rounded-md lg:my-4 my-2 lg:ml-4 ml-2">
-              <img class="h-8" src="./c1-assets/dog-cartoon.png" alt="" />
+              <img class="h-8" src="./c1-assets/pet-couch.png" alt="" />
             </div>
               <div class="font-semibold text-start lg:text-lg text-sm md:w-20 md:h-20  sm:-mt-1 -mt-3 lg:pt-2">
                 <h3>⭐ 4.5</h3>
@@ -278,7 +278,7 @@
             <div class="bg-white rounded-md flex lg:h-28 h-20 lg:w-60 md:w-54 sm:w-44 w-36 lg:py-0 py-4 pl-4 md:gap-5 gap-2 border-2 border-gray-100 ">
 
             <div class="lg:h-20 h-7 lg:w-20 lg:w-16 flex justify-center items-center bg-orange-50 rounded-md lg:my-4 my-2 lg:ml-4 ml-2">
-              <img class="h-8" src="./c1-assets/dog-cartoon.png" alt="" />
+              <img class="h-8" src="./c1-assets/fish-cartoon.png" alt="" />
             </div>
               <div class="font-semibold text-start lg:text-lg text-sm md:w-20 md:h-20  sm:-mt-1 -mt-3 lg:pt-2">
                 <h3>⭐ 4.5</h3>
@@ -290,7 +290,7 @@
             <div class="bg-white rounded-md flex lg:h-28 h-20 lg:w-60 md:w-54 sm:w-44 w-36 lg:py-0 py-4 pl-4 md:gap-5 gap-2 border-2 border-gray-100 ">
 
             <div class="lg:h-20 h-7 lg:w-20 lg:w-16 flex justify-center items-center bg-orange-50 rounded-md lg:my-4 my-2 lg:ml-4 ml-2">
-              <img class="h-8" src="./c1-assets/dog-cartoon.png" alt="" />
+              <img class="h-8" src="./c1-assets/pet-couch.png" alt="" />
             </div>
               <div class="font-semibold text-start lg:text-lg text-sm md:w-20 md:h-20  sm:-mt-1 -mt-3 lg:pt-2">
                 <h3>⭐ 4.5</h3>
@@ -304,7 +304,7 @@
             <div class="bg-white rounded-md flex lg:h-28 h-20 lg:w-60 md:w-54 sm:w-44 w-36 lg:py-0 py-4 pl-4 md:gap-5 gap-2 border-2 border-gray-100 invisible md:visible">
 
             <div class="lg:h-20 h-7 lg:w-20 lg:w-16 flex justify-center items-center bg-orange-50 rounded-md lg:my-4 my-2 lg:ml-4 ml-2">
-              <img class="h-8" src="./c1-assets/dog-cartoon.png" alt="" />
+              <img class="h-8" src="./c1-assets/rabbit-cartoon.png" alt="" />
             </div>
               <div class="font-semibold text-start lg:text-lg text-sm md:w-20 md:h-20  sm:-mt-1 -mt-3 lg:pt-2">
                 <h3>⭐ 4.5</h3>
@@ -319,31 +319,43 @@
           </div>
 </div>
 
-      <h1 class="adlam mt-60 md:ml-36 ml-8">Everyday low Price</h1>
 
-      <div class="sora md:flex h-[700px] md:h-[480px] m-8 md:m-20 bg-slate-700">
-        <div
-          class="md:flex bg-gradient-to-r to-blue-300 from-pink-200 md:h-[480px] h-80 md:w[784px]  rounded-md"
+
+      <h1 class="adlam text-3xl md:mt-60 md:ml-20 sm:ml-8 ml-2">Everyday low Price</h1>
+
+      <div class="sora md:flex gap- h-[700px] lg:h-[480px] w-auto m-1 sm:m-20 mb-96 justify-between">
+        
+     <div
+          class="flex bg-gradient-to-r to-blue-300 from-pink-200 md:h-[480px]  md:w[784px]  rounded-md justify-between h-4/4 w-4/4"
         >
-          <div class="sora ">
+          <div class="sora flex-auto text-start md:content-center ml-12 mt-10 md:mt-0 h-4/4 w-4/4">
+
             <h5 class="md:block hidden ">Under Price</h5>
-            <h2 class="font-bold text-xl rounded-md">Pet Grooming Mitt</h2>
+            <h2 class="adlam font-bold text-xl rounded-md ">Pet Grooming Mitt</h2>
             <h3 class="hidden md:block text-white">(Easy Hair Removal)</h3>
-            <h1 class="font-bold text-4xl">$7.99</h1>
+            <h1 class="font-bold text-4xl sm:text-black text-white">$7.99</h1>
           </div>
-          <img class="h-2/3" src="./c1-assets/cute-dog-mid.png" alt="" />
+          <img class="md:w-[382px] md:h-[480px] h-4/4 w-4/4 content-end" src="./c1-assets/cute-dog-mid.png" alt="" />
         </div>
+
+
         <div
-          class="bg-gradient-to-l to-orange-50 from-orange-200 md:h-[480px]  md:w-4/4 rounded-md mt-6 md:mt-0"
-        >
-          <h2 class="font-bold text-xl">T-Shirt for Dogs</h2>
-          <h1 class="font-bold text-orange-300 text-4xl">$7.99</h1>
-          <img class="h-2/3" src="./c1-assets/cute-pet-mid.png" alt="" />
+          class="bg-gradient-to-l to-orange-50 from-orange-200 md:h-[480px]  h-[350px] rounded-md mt-6 md:mt-0 md:w[512px] items-center text-start content-center flex justify-between ">
+
+        <div class=" sm:ml-12 ml-6  ">
+          <h2 class="adlam font-bold sm:text-xl -mt-6">T-Shirt for Dogs</h2>
+          <h1 class="font-bold text-orange-300 mt-2 sm:text-4xl">$7.99</h1>
+        </div>
+          <img class=" md:w-[232px] md:h-[280px] h-1/4 w-1/4 " src="./c1-assets/cute-pet-mid.png" alt="" />
+
         </div>
       </div>
 
+
+
+
       <div class="-mb- md:flex bg-red-400 md:h-[491px] items-center justify-center text-center align-middle rounded-md lg:mx-36 md:mx-11 sm:mx-4 md:mt-36 mt-14 absolute bo-[450px]">
-        <div><img src="./c1-assets/cute-pet-small.png" alt="" /></div>
+        <div><img class="" src="./c1-assets/cute-pet-small.png" alt="" /></div>
         <div class="sora">
           <h2 class="adlam text-4xl">Get Pawsome News!</h2>
           <p class="font-semibold">Exclusive training tips, ticks, product deals and more.</p>
