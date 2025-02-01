@@ -38,16 +38,16 @@
     <nav
       class="sora sticky top-0 flex justify-between items-center lg:px-24 md:px-10 sm:px-4 px-8 bg-orange-200 bg-opacity-40 h-20 border-zinc-400 border-b-2 sm:border-0 backdrop-blur-md backdrop-filter z-50"
     >
-      <div class="flex items-center ">
-        <img class="animate-ping" src="./c1-assets/logo-header.png" alt="" />
-        <h3 class="sm:flex hidden sm:block">
+      <div class="flex items-center hover:animate-bounce ">
+        <img src="./c1-assets/logo-header.png" alt="" class="hover:animate-ping"/>
+        <h3 class="md:flex hidden ">
           Browse<span class="text-orange-200">4</span>Pets
         </h3>
       </div>
-      <ul class="gap-3 md:gap-6 lg:gap-16 sm:flex hidden sm:block lg:-mr-28">
+      <ul class="gap-3 md:gap-6 lg:gap-16 sm:flex hidden lg:-mr-28">
         <li>
           <a
-            class="hover:underline hover:text-xl transition-all duration-700"
+            class="hover:underline hover:text-xl hover:animate-pulse transition-all duration-700"
             href="#"
             >Find a pet</a
           >
@@ -462,36 +462,46 @@
 
 
 
-     <div class="pt-96">
-      <div class="bg-orange-100 p-4 rounded-lg shadow-md">
-        <h2 class="text-2xl font-bold mb-2">Dog Food</h2>
-        <ul class="list-none mb-4">
-          <li class="flex items-center mb-2">
-            <img src="dog-food-image.jpg" alt="Dog Food" class="w-12 h-12 mr-2">
-            <span class="text-lg font-medium">Kibble Delight</span>
-          </li>
-          <li class="flex items-center mb-2">
-            <img src="dog-food-image2.jpg" alt="Dog Food" class="w-12 h-12 mr-2">
-            <span class="text-lg font-medium">Pupper's Favorite</span>
-          </li>
-        </ul>
-        <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">Shop Now</button>
+     <div class="sm:pt-40 md:pt-80 pt-36 w-2/3 mx-auto ">
+
+      <div class=" bg-orange-100 p-4 rounded-lg shadow-md  ">
+        
+          <h2 class="text-2xl font-bold mb-2 text-center">Dog Food</h2>
+        <div class="sm:flex mb-4 sm:justify-between">
+
+          <a href="#" class="flex md:justify-between items-center mb-2">
+            <img src="/c1-assets/dog food without background (1).png" alt="" class="w-12 h-12 mr-2">
+            <span class="text-lg font-medium">Dog Food</span>
+          </a>
+          <a href="#" class="flex items-center mb-2">
+            <img src="/c1-assets/dog food without background.png" alt="" class="w-12 h-12 mr-2">
+            <span class="text-lg font-medium">Dog Food</span>
+          </a>
+        
+      </div>
+        <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded hover:pr-52 hover:pb-3 transition-all duration-700">Shop Now</button>
+     
       </div>
 
+
       <div class="bg-pink-100 p-4 rounded-lg shadow-md mt-11">
-        <h2 class="text-2xl font-bold mb-2">Cat Corner</h2>
-        <ul class="list-none mb-4">
-          <li class="flex items-center mb-2">
-            <img src="cat-image.jpg" alt="Cat" class="w-12 h-12 mr-2">
-            <span class="text-lg font-medium">Whisker Wonders</span>
-          </li>
-          <li class="flex items-center mb-2">
-            <img src="cat-image2.jpg" alt="Cat" class="w-12 h-12 mr-2">
-            <span class="text-lg font-medium">Purrfectly Pawsome</span>
-          </li>
-        </ul>
-        <button class="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded">Bye Now</button>
+
+        <h2 class="text-2xl font-bold mb-2 text-center">Cat food</h2>
+        <div class=" sm:flex mb-4 sm:justify-between">
+       
+          <a href="#" class="flex md:justify-between items-center mb-2">
+            <img src="/c1-assets/a can and a packet of cat food without background (1).png" alt="" class="w-12 h-12 mr-2">
+            <span class="text-lg font-medium">Cat food</span>
+          </a>
+          <a href="#" class="flex md:justify-between items-center mb-2">
+            <img src="/c1-assets/a can and a packet of cat food without background.png" alt="" class="w-12 h-12 mr-2">
+            <span class="text-lg font-medium">Cat food</span>
+          </a>
+        </div>
+
+        <button class="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded hover:pr-52 hover:pb-3 transition-all duration-700">Bye Now</button>
       </div>
+
     </div> 
 
     </main>
@@ -499,11 +509,11 @@
     <div
       class="md:flex bg-red-100 md:h-[491px] my-0 m-24 rounded-md relative -bottom-48 h-auto text-center items-center justify-center mx-auto w-4/5 pb-40 z-10 md:mt-36 lg:-mt-16"
     >
-      <div class="ml-36 md:ml-14">
-        <img class=" " src="./c1-assets/cute-pet-small.png" alt="" />
+      <div class=" md:ml-14">
+        <img class=" mx-auto md:mx=0 md:h-auto h-4/5" src="./c1-assets/cute-pet-small.png" alt="" />
       </div>
 
-      <div class="sora md:ml-28 ">
+      <div class="sora md:mx-28 md:pt-16">
         <h2 class="adlam md:text-4xl sm:text-3xl text-2xl md:-ml-10">
           Get Pawsome News!
         </h2>
@@ -511,11 +521,11 @@
           Exclusive training tips, ticks, product deals and more.
         </p>
 
-        <form class="flex-none text-start mt-10">
+        <form class="flex-none text-start mt-10 ">
           <input
             type="email"
             placeholder="Your email..."
-            class="md:w-full w-5/6 py-2 ml-7 md:-ml-10 border rounded-md"
+            class="md:w-full w-5/6 py-2 ml-7 md:-ml-10 pl-5 border rounded-md"
           />
 
           <button
@@ -531,7 +541,7 @@
         class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-60"
       >
         <div>
-          <img src="c1-assets/logo-footer.png" alt="" class="h-12 mb-3" />
+          <img src="c1-assets/logo-footer.png" alt="" class="h-12 mb-3 animate-ping " />
           <h3 class="text-xl font-semibold">Browse4Pets</h3>
           <p class="mt-2 font-medium">
             Discover a world of treats, toys, and essentials for your furry
