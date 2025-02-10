@@ -22,6 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap"
       rel="stylesheet"
     />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.css" rel="stylesheet" type="text/css" />
 
     <style>
       body {
@@ -47,16 +48,16 @@
   </head>
   <body>
     <nav
-      class="sora sticky top-0 flex justify-between items-center lg:px-24 md:px-10 sm:px-4 px-8 bg-orange-200 bg-opacity-40 h-20 border-zinc-400 border-b-2 sm:border-0 backdrop-blur-md backdrop-filter z-50 text-black"
+      class="sora sticky top-0 flex justify-between items-center lg:px-24 md:px-10 sm:px-4 px-2 bg-orange-200 bg-opacity-40 h-20 border-zinc-400 border-b-2 sm:border-0 backdrop-blur-md backdrop-filter z-50 text-black"
     >
       <div class="flex items-center">
         
         <button
           type="button"
           onclick="toggleDarkMode()"
-          class="hover:drop-shadow-md hover:scale-150 transition-all duration-500 animate-pulse"
+          class="hover:drop-shadow-md sm:hover:scale-150 hover:scale-110 transition-all duration-500 animate-pulse"
         >
-          <img src="./c1-assets/logo-header.png" alt="" />
+          <img src="./c1-assets/logo-header.png" alt="" />theme
         </button>
 
         <h3 class="md:flex hidden">
@@ -86,7 +87,7 @@
           >
         </li>
       </ul>
-      <div class="sm:flex hidden sm:block gap-3 sm:gap-1 items-center">
+      <div class="flex  gap-2 sm:gap-1 items-center  ">
         <a href="#"
           ><img
             class="h-6 hover:h-8 transition-all duration-700"
@@ -100,24 +101,30 @@
             alt=""
         /></a>
         <button
-          class="px-5 py-1 border border-orange-600 transition-all duration-700 rounded-md hover:bg-orange-200 hover:text-xl hover:border-none hover:shadow-orange-300 hover:shadow-lg"
-        >
+          class="sm:px-5 px-1 py-1 border border-orange-600 transition-all duration-700 rounded-md hover:bg-orange-200 hover:text-xl hover:border-none hover:shadow-orange-300 hover:shadow-lg">
           Login
         </button>
+
+        
         <button
-          class="bg-orange-300 rounded-md py-1.5 px-6 hover:shadow-xl hover:bg-white hover:font-bold hover:py-2 hover:px-7 transition-all duration-700"
-        >
+          class="bg-orange-300 rounded-md py-1.5  px-1 sm:px-6 hover:shadow-xl hover:bg-white hover:font-bold hover:py-2 sm:hover:px-7 hover:px-2 transition-all duration-700">
           Register
         </button>
-      </div>
+      
 
-      <button
-        type="button"
-        onclick="toggleDarkMode()"
-        class="sm:hidden hover:drop-shadow-md hover:scale-150 transition-all duration-500"
-      >
-        <img src="./c1-assets/menu-burger.png" alt="" />
-      </button>
+      <details class="dropdown sm:hidden dropdown-end ">
+        
+        <summary class="btn bg-white hover:bg-slate-400 m-1 w-12  hover:scale-110 transition-all  duration-500"><img src="./c1-assets/menu-burger.png" alt="" class="h-4/4 w-4/4 fixed " /></summary>
+
+        <ul class="menu dropdown-content bg-orange-200 bg-opacity-60 backdrop-blur-md backdrop-filter w-52 p-2 shadow rounded-md flex-col text-center gap-4 ">
+                
+
+          <li class="hover:scale-110 transition-all duration-500 hover:bg-slate-400 rounded-lg bg-orange-200  backdrop-blur-md backdrop-filter content-center"><a>Find a pet</a></li>
+          <li class="hover:scale-110 transition-all duration-500 hover:bg-slate-400 rounded-lg bg-orange-200  backdrop-blur-md backdrop-filter content-center"><a>Breeds</a></li>
+          <li class="hover:scale-110 transition-all duration-500 hover:bg-slate-400 rounded-lg bg-orange-200  backdrop-blur-md backdrop-filter content-center"><a>Contact us</a></li>
+        </ul>
+      </details>
+      </div>
     </nav>
     <header>
       <div class="w-9/10 mx-9 md:h-[700px] h-[600px] mb-52 sm:mb-5">
@@ -142,7 +149,7 @@
           </p>
 
           <a
-            class="bg-orange-300 px-4 py-2 rounded-md text-xl font-bold ml-4 hover:text-orange-300 hover:bg-black hover:py-3 transition-all duration-700"
+            class="bg-orange-300 px-4 py-2 rounded-md text-xl font-bold ml-4 hover:text-orange-300 hover:bg-black hover:py-3 transition-all duration-700 text-white"
             href="#"
             >Find a pet</a
           >
